@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h1 class="nu">Welcome To TODO APP</h1>
+    <div class="name">
+     <input  class="na" type="text" id="todo" placeholder="Enter Your DailyWork" >
+     <Button class="ft" onclick="Add();">Add Item</Button>
+     <Button class="yt" onclick="Deleted();">Delete All</Button>
+    </div>
+     <div>
+         <ul id="made">
+             
+         </ul>
+     </div>
+     <style>
+         .nu{
+             color: black;
+             text-shadow: 2px 2px yellow;
+         }
+         body{
+             background-image: url(images/back.jpg);
+             background-repeat: no-repeat;
+             background-size: 100%;
+         }
+
+         .name{
+             
+             text-align: center;
+             display: flex;
+             justify-content: space-around;
+             margin-top: 5em;
+
+         }
+         .na{
+             width: 20em;
+             height: 3em;
+             
+         }
+         .ft{
+             background-color: blue;
+             color: white;
+         }
+         .yt{
+            background-color: blue;
+             color: white;
+         }
+         .mt{
+             text-align: center;
+             list-style: none;
+             margin: 1em 1em 1em 1em;
+             
+         }
+         .btnn{
+             background-color: lightskyblue;
+            
+            margin-left: 3em;
+         }
+         .btnde{
+            background-color: lightskyblue;
+            margin-left: 1em;
+         }
+         input.na:hover{
+            background-color:antiquewhite;
+            color: black;
+         }
+         input.na:focus{
+             background-color: lavender;
+             font-size: medium;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         }
+         .ft:active{
+             background-color: yellow;
+         }
+         .yt:active{
+             background-color: yellow;
+         }
+     </style>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
